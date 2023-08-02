@@ -1,0 +1,80 @@
+@font-face {
+ font-family: 'Prompt-p';
+ src: url('./../fonts/Prompt-ExtraLight.ttf');
+}
+@font-face {
+ font-family: 'Prompt-t';
+ src: url('./../fonts/Prompt-SemiBold.ttf');
+}
+
+
+:root{
+ --text-color: #662113;
+ --text-akcent: #F5F2EC;
+ --font-p: 'Prompt-p';
+ --font-t: 'Prompt-t';
+}
+.btn{
+ outline: none;
+ border: none;
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+background-color: #FEF4E4;
+font-size: calc(1em + 0.3vw)
+}
+p,span{
+ font-family: var(--font-p);
+}
+h1,h2,h3{
+ font-family: var(--font-t);
+font-size: calc(2.7em + 0.2vw);
+color: var(--text-color);
+}
+ul,li{
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+a{
+ text-decoration: none;
+ color: unset;
+font-size: calc(0.7em + 0.3vw)
+}
+.container{
+ width: 80%;
+ max-width: 1470px;
+ padding: 0 15px;
+ margin: 0 auto;
+}
+.wrap{
+ display: flex;
+ flex-direction: column;
+}
+.main{
+ padding: 2% 0 4% 0;
+}
+
+.flex{
+ display: flex;
+}
+.none{
+ display: none;
+}
+.btn{
+ cursor: pointer;
+}
+.image{
+ position: absolute;
+}
+@media (max-width: 500px) {
+ .container{
+  width: 90%;
+  padding: 0;
+  margin: 0 auto;
+ }
+}

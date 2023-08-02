@@ -1,0 +1,111 @@
+.header__wrap {
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+@media (max-width: 1050px) {
+  .header__wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+.header__burger {
+  display: none;
+}
+@media (max-width: 1050px) {
+  .header__burger {
+    display: flex;
+  }
+}
+.header__menu {
+  gap: 30px;
+  display: flex;
+}
+@media (max-width: 1050px) {
+  .header__menu {
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    background: #e6dbc8;
+    top: 0;
+    position: fixed;
+    bottom: 0;
+    width: 70%;
+    max-width: 400px;
+    padding: 20px;
+    z-index: 9;
+    gap: 10px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+  }
+  .header__menu-mobailOpen {
+    left: 0;
+    box-shadow: 10px 0 70em #000000;
+  }
+}
+.header__menu li {
+  background: var(--text-akcent);
+  color: var(--text-color);
+  font-family: var(--font-t);
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  padding: 10px 30px;
+  border: 2px solid var(--text-color);
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-transform: capitalize;
+}
+.header__menu li.active {
+  background: var(--text-color);
+  color: var(--text-akcent);
+  border-radius: 13px;
+  border: 2px solid transparent;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  padding: 10px 30px;
+}
+.header__menu li:hover {
+  background-color: var(--text-color);
+  color: var(--text-akcent);
+}
+@media (max-width: 1050px) {
+  .header__menu li a {
+    font-size: calc(1.3em + 0.3vw);
+  }
+  .header__menu li a.active {
+    background: var(--text-color);
+    color: var(--text-akcent);
+    border-radius: 13px;
+    border: 2px solid transparent;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    padding: 10px 30px;
+  }
+}
+.header__el {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (max-width: 500px) {
+  .header__el {
+    display: none;
+  }
+}/*# sourceMappingURL=Header.modules.css.map */

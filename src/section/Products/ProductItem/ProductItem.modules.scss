@@ -1,0 +1,17 @@
+.card{
+ border: 1px solid;
+ padding: 5px;
+ border: 1px solid;
+ padding: 5px;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ align-items: center;
+ gap: 10px;
+ border-radius: 10px;
+}
+.cart__img{
+ width: 100px;
+ height: 100px;
+ 
+}
